@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+.container {
+  position: absolute;
+  background-color: var(--very-pale-blue);
+  text-align: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 440px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.text {
+  padding: 40px;
+}
+
+.title {
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+  font-weight: 990;
+  font-size: 30px;
+}
+
+.paragraph {
+  color: var(--desaturated-blue);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: hsl(225, 100%, 96.5%);
+  display: flex;
+  padding: 22px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.box-left div {
+  margin-left: 20px;
+}
+.box-left h3 {
+  color: var(--dark-blue);
+  font-weight: 950;
+  margin-bottom: 5px;
+}
+.box-left p {
+  color: var(--desaturated-blue);
+}
+.box a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.btn {
+  color: var(--very-pale-blue);
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  width: 360px;
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 0.625rem;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px 0 rgba(81, 76, 89, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn:hover {
+  transition: 0.3s;
+  background-color: hsl(225, 54%, 24%);
+  box-shadow: 0 8px 16px 0 rgba(62, 57, 70, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  color: var(--desaturated-blue);
+  display: block;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.attribution {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
